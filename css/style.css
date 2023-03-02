@@ -1,31 +1,93 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 body {
+    margin-top: 5%;
     font-family: 'Inter', sans-serif !important;
-    background-color: rgb(80, 80, 241);
+    background-color: #3a35fa;
     color: white;
 }
-#city {
-    padding-top: 5%;
-    font-size: 50px;
+::placeholder{
+    color: aliceblue;
+}
+input {
+    background-color: transparent;
+    border: 0px solid;
+    color: white;
+    width: 300px;
+    text-align: center;
+    
+}
+button {
+    background-color: #3a35fa;
+    border-color: #3a35fa;
+    box-shadow: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#setCity {
+    font-size: larger;
+    font-size: 2.5rem;
     font-weight: bolder;
 }
 #format {
     padding-top: 2%;
 }
 #temparature {
-    font-size: 80px;
+    margin-top: 10%;
+    font-size: 2.5rem;
+}
+#weatherIcon img {
+    width: 100px;
+}
+.temp {
+    display: flex;
+    flex-direction: column;
 }
 #feels-like {
-    margin-top: -20%;
-    font-size: 40px;
+    font-size: 2rem;
     opacity: 70%;
-
 }
 .paragraph {
-    font-size: 40px;
+    font-size: 2rem;
 }
-#icon {
-    width: 10%;
-    height: auto;
+.weather{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+.navbar a img {
+    max-width: 10%;
+}
+#weather-icon {
+    max-width: 5%;
 }
 
+html {
+    font-size: 1rem;
+  }
+  
+  @include media-breakpoint-up(sm) {
+    html {
+      font-size: 1rem;
+    }
+  }
+  
+  @include media-breakpoint-up(md) {
+    html {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @include media-breakpoint-up(lg) {
+    html {
+      font-size: 1.3rem;
+    }
+  }
