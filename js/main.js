@@ -1,7 +1,7 @@
 var urlapi = "";
-var temp = document.getElementById("temparature");
-var feelsLike = document.getElementById("feels-like");
-var image = document.getElementById("weather-icon");
+const temp = document.getElementById("temparature");
+const feelsLike = document.getElementById("feels-like");
+const image = document.getElementById("weather-icon");
 async function weatherIcon(){
     const response = await fetch(urlapi);
 
@@ -31,7 +31,7 @@ let getData = () => {
         console.log(response.current.condition.text);
         let x = response.current.condition.text;
         if(x == "Partly cloudy"){
-            createIcon('./images/icons8-partly-cloudy-66.png');
+            createIcon('./images/partly-cloudy.png');
         }
         else if(x == "Mist"){
             createIcon('./images/fog.png');
@@ -43,7 +43,13 @@ let getData = () => {
             createIcon('./images/rainy.png');
         }
         else if(x == "Sprite"){
-            createIcon('./images/6122561.png');
+            createIcon('./images/sprite.png');
+        }
+        else if(x == "Overcast"){
+            createIcon('./images/outcast.png');
+        }
+        else if(x == 'Sunny'){
+            createIcon('./images/sunny.png');
         }
         else{
             createIcon("./images/sunny.png")
