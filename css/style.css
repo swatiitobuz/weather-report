@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+body {
+    font-family: 'Inter', sans-serif !important;
+    background-color: rgb(80, 80, 241);
+    color: white;
+}
+#city {
+    padding-top: 5%;
+    font-size: 50px;
+    font-weight: bolder;
+}
+#format {
+    padding-top: 2%;
+}
+#temparature {
+    font-size: 80px;
+}
+#feels-like {
+    margin-top: -20%;
+    font-size: 40px;
+    opacity: 70%;
+
+}
+.paragraph {
+    font-size: 40px;
+}
+#icon {
+    width: 10%;
+    height: auto;
+}
+

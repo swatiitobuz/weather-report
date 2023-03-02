@@ -10,5 +10,7 @@ let result = weatherReport()
     console.log(res);
     console.log(res.location);
     document.getElementById("city").innerHTML = res.location.name;
-    document.getElementById("temparature").innerHTML = res.current.temp_c + "<sup>o<sup>";
+    document.getElementById("temparature").innerHTML = res.current.temp_f + "\u00B0";
+    document.getElementById("feels-like").innerHTML = "feels  " + res.current.feelslike_f + "\u00B0";
 })
+
