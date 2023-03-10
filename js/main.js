@@ -54,7 +54,24 @@ let getData = () => {
         else{
             createIcon("./images/sunny.png")
         }
-
     })
+}
+document.addEventListener('keyup',(eve)=>{
+    if(eve.key==="Enter"){
+        console.log(eve);
+        getData();
+    }
+})
 
+function dropDown(){
+    const listItems = document.querySelector("ul");
+    listItems.classList.toggle("dropdown-toggle");
+}
+
+var items = document.querySelectorAll("#list li");
+for(let i = 0;i < items.length;i++){
+    items[i].onclick = function(){
+        document.getElementById("setCity").value = this.innerHTML;
+        getData();
+    }
 }

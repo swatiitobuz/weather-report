@@ -16,6 +16,18 @@ input {
     text-align: center;
     
 }
+.scroll-down {
+    background: #3a35fa;
+    list-style: none;
+    height: 10vh;
+    overflow: scroll;
+    font-size: 2rem;
+
+}
+.dropdown-toggle {
+    display: none;
+}
+
 button {
     background-color: #3a35fa;
     border-color: #3a35fa;
@@ -61,7 +73,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10%;
+    margin-top: 2%;
 }
 .navbar a img {
     max-width: 10%;

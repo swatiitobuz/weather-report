@@ -21,13 +21,25 @@
           <a href="#" target="_blank"
             ><img src="images/share-icon.svg" alt="no image"
           /></a>
-          <input
-            type="text"
-            class="city-name"
-            id="setCity"
-            oninput="getData()"
-            placeholder="enter city name"
-          />
+          <div class="drop-down">
+            <input
+              onclick="dropDown()"
+              type="text"
+              class="city-name"
+              id="setCity"
+              placeholder="enter city name"
+            />
+            <ul id="list" class="scroll-down dropdown-toggle">
+              <li>Kolkata</li>
+              <li>Delhi</li>
+              <li>America</li>
+              <li>San Fransisco</li>
+              <li>Haldia</li>
+              <li>paris</li>
+              <li>London</li>
+              <li>France</li>
+            </ul>
+          </div>
           <a href="#" target="_blank"
             ><img src="images/menu-circle-dots-svgrepo-com.svg" alt=""
           /></a>
