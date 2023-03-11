@@ -7,6 +7,7 @@ body {
 }
 ::placeholder{
     color: aliceblue;
+    /* overflow: scroll; */
 }
 input {
     background-color: transparent;

@@ -2,6 +2,8 @@ var urlapi = "";
 const temp = document.getElementById("temparature");
 const feelsLike = document.getElementById("feels-like");
 const image = document.getElementById("weather-icon");
+const setcity= document.getElementById("setCity");
+const listItems = document.querySelector("ul");
 async function weatherIcon(){
     const response = await fetch(urlapi);
 
@@ -18,7 +20,7 @@ let createIcon = (image) => {
     document.getElementById("weatherIcon").appendChild(elem);
   };
 let getData = () => {
-    let setcity= document.getElementById("setCity");
+    
     let value = setcity.value;
     urlapi = "http://api.weatherapi.com/v1/current.json?key=0c80b2b56f1943ada19100744230103&q=" + value + "&aqi=no";
     console.log(urlapi);
@@ -62,9 +64,7 @@ document.addEventListener('keyup',(eve)=>{
         getData();
     }
 })
-
 function dropDown(){
-    const listItems = document.querySelector("ul");
     listItems.classList.toggle("dropdown-toggle");
 }
 
@@ -73,5 +73,13 @@ for(let i = 0;i < items.length;i++){
     items[i].onclick = function(){
         document.getElementById("setCity").value = this.innerHTML;
         getData();
+        dropDown();
     }
 }
+window.addEventListener("click", (e) => {
+    if(e.target === setcity ){
+        listItems.classList.remove("dropdown-toggle");
+    }
+    else
+    listItems.classList.add("dropdown-toggle");
+})
