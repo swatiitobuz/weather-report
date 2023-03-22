@@ -7,13 +7,14 @@ body {
 }
 ::placeholder{
     color: aliceblue;
-    /* overflow: scroll; */
+    font-size: 1.35rem;
+    overflow-x: scroll;
 }
 input {
     background-color: transparent;
     border: 0px solid;
     color: white;
-    width: 300px;
+    width: 10rem;
     text-align: center;
     
 }
@@ -46,7 +47,7 @@ button {
 }
 #setCity {
     font-size: larger;
-    font-size: 2.5rem;
+    font-size: 1.35rem;
     font-weight: bolder;
 }
 #format {
@@ -57,7 +58,7 @@ button {
     font-size: 2.5rem;
 }
 #weatherIcon img {
-    width: 100px;
+    width: 5rem;
 }
 .temp {
     display: flex;
@@ -68,7 +69,7 @@ button {
     opacity: 70%;
 }
 .paragraph {
-    font-size: 2rem;
+    font-size: 1rem;
 }
 .weather{
     display: flex;
@@ -84,7 +85,7 @@ button {
 }
 
 html {
-    font-size: 1rem;
+    font-size: 2rem;
   }
   
   @include media-breakpoint-up(sm) {

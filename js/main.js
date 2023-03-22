@@ -29,7 +29,6 @@ let getData = () => {
         console.log(response);
         document.getElementById("temparature").innerHTML = response.current.temp_f + "\u00B0";
         document.getElementById("feels-like").innerHTML = "feels  " + response.current.feelslike_f + "\u00B0";
-        //  createIcon('images/fog.png')
         console.log(response.current.condition.text);
         let x = response.current.condition.text;
         if(x == "Partly cloudy"){
@@ -42,19 +41,25 @@ let getData = () => {
             createIcon('images/stormy.png');
         }
         else if(x == "Rainy"){
-            createIcon('./images/rainy.png');
+            createIcon('./images/clouds.png');
         }
         else if(x == "Sprite"){
-            createIcon('./images/sprite.png');
+            createIcon('./images/sun-clouds.png');
         }
         else if(x == "Overcast"){
-            createIcon('./images/outcast.png');
+            createIcon('./images/sun-clouds-rain.png');
         }
         else if(x == 'Sunny'){
-            createIcon('./images/sunny.png');
+            createIcon('./images/sun.png');
+        }
+        else if(x == "Light rain"){
+            createIcon('./images/rainy.png');
+        }
+        else if(x == "Clear"){
+            createIcon('./images/clear-cloudy.png');
         }
         else{
-            createIcon("./images/sunny.png")
+            createIcon("./images/sun.png")
         }
     })
 }
