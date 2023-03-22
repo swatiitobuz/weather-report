@@ -6,7 +6,6 @@ let weatherArray = "";
 try {
   var resultOfRead = fs.readFileSync("./weatherDatabase.txt");
   weatherArray = JSON.parse(resultOfRead);
-  // console.log(weatherArray);
 } catch (err) {
   console.log(err);
 }

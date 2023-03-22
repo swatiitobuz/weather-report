@@ -34,24 +34,28 @@ let getData = () => {
       "feels  " + response.current.feelslike_f + "\u00B0";
     console.log(response.current.condition.text);
     let x = response.current.condition.text;
-    if (x == "Partly cloudy") {
+    if (x === "Partly cloudy") {
       createIcon("./images/partly-cloudy.png");
-    } else if (x == "Mist") {
+    } else if (x === "Mist") {
       createIcon("./images/fog.png");
-    } else if (x == "Stormy") {
+    } else if (x === "Stormy") {
       createIcon("images/stormy.png");
-    } else if (x == "Rainy") {
+    } else if (x === "Rainy") {
       createIcon("./images/clouds.png");
-    } else if (x == "Sprite") {
+    } else if (x === "Sprite") {
       createIcon("./images/sun-clouds.png");
-    } else if (x == "Overcast") {
+    } else if (x === "Overcast") {
       createIcon("./images/sun-clouds-rain.png");
-    } else if (x == "Sunny") {
+    } else if (x === "Sunny") {
       createIcon("./images/sun.png");
-    } else if (x == "Light rain") {
+    } else if (x === "Light rain") {
       createIcon("./images/rainy.png");
-    } else if (x == "Clear") {
+    } else if (x === "Clear") {
       createIcon("./images/clear-cloudy.png");
+    } else if (x === "Moderate or heavy rain with thunder") {
+      createIcon("./images/stormy.png");
+    } else if (x === "Patchy light rain with thunder") {
+      createIcon("./images/patchy.png");
     } else {
       createIcon("./images/sun.png");
     }

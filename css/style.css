@@ -1,107 +1,105 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 body {
-    margin-top: 5%;
-    font-family: 'Inter', sans-serif !important;
-    background-color: #3a35fa;
-    color: white;
+  margin-top: 5%;
+  font-family: "Inter", sans-serif !important;
+  background-color: #3a35fa;
+  color: white;
 }
-::placeholder{
-    color: aliceblue;
-    font-size: 1.35rem;
-    overflow-x: scroll;
+::placeholder {
+  color: aliceblue;
+  font-size: 1.35rem;
+  overflow-x: scroll;
 }
 input {
-    background-color: transparent;
-    border: 0px solid;
-    color: white;
-    width: 10rem;
-    text-align: center;
-    
+  background-color: transparent;
+  border: 0px solid;
+  color: white;
+  width: 10rem;
+  text-align: center;
 }
 .scroll-down {
-    background: #3a35fa;
-    list-style: none;
-    height: 10vh;
-    overflow: scroll;
-    font-size: 1rem;
-
+  background: #3a35fa;
+  list-style: none;
+  height: 10vh;
+  overflow: scroll;
+  font-size: 1rem;
 }
 .dropdown-toggle {
-    display: none;
+  display: none;
 }
 
 button {
-    background-color: #3a35fa;
-    border-color: #3a35fa;
-    box-shadow: none;
+  background-color: #3a35fa;
+  border-color: #3a35fa;
+  box-shadow: none;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 #setCity {
-    font-size: larger;
-    font-size: 1.35rem;
-    font-weight: bolder;
+  font-size: larger;
+  font-size: 1.35rem;
+  font-weight: bolder;
 }
 #format {
-    padding-top: 2%;
+  padding-top: 2%;
 }
 #temparature {
-    margin-top: 10%;
-    font-size: 2rem;
+  margin-top: 10%;
+  font-size: 1.5rem;
 }
 #weatherIcon img {
-    width: 5rem;
+  width: 5rem;
 }
 .temp {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 #feels-like {
-    font-size: 1.5rem;
-    opacity: 70%;
+  font-size: 1.5rem;
+  opacity: 70%;
 }
 .paragraph {
-    font-size: 0.75rem;
+  font-size: 0.75rem;
 }
-.weather{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 2%;
+.weather {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2%;
 }
 .navbar a img {
-    max-width: 10%;
+  max-width: 10%;
 }
 #weather-icon {
-    max-width: 3%;
+  max-width: 3%;
 }
 
 html {
-    font-size: 2rem;
+  font-size: 2rem;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1rem;
   }
-  
-  @include media-breakpoint-up(sm) {
-    html {
-      font-size: 1rem;
-    }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.2rem;
   }
-  
-  @include media-breakpoint-up(md) {
-    html {
-      font-size: 1.2rem;
-    }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.3rem;
   }
-  
-  @include media-breakpoint-up(lg) {
-    html {
-      font-size: 1.3rem;
-    }
-  }
+}
