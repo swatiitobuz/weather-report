@@ -1,4 +1,4 @@
-var urlapi = "";
+let urlapi = "";
 const temp = document.getElementById("temparature");
 const feelsLike = document.getElementById("feels-like");
 const image = document.getElementById("weather-icon");
