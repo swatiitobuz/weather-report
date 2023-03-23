@@ -61,12 +61,14 @@ let getData = () => {
     }
   });
 };
+
 document.addEventListener("keyup", (eve) => {
   if (eve.key === "Enter") {
     console.log(eve);
     getData();
   }
 });
+
 function dropDown() {
   listItems.classList.toggle("dropdown-toggle");
 }
@@ -79,6 +81,7 @@ for (let i = 0; i < items.length; i++) {
     dropDown();
   };
 }
+
 window.addEventListener("click", (e) => {
   if (e.target === setcity) {
     listItems.classList.remove("dropdown-toggle");
