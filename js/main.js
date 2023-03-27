@@ -6,7 +6,6 @@ const setcity = document.getElementById("setCity");
 const listItems = document.querySelector("ul");
 async function weatherIcon() {
   const response = await fetch(urlapi);
-
   return await response.json();
 }
 let createIcon = (image) => {
@@ -73,7 +72,7 @@ function dropDown() {
   listItems.classList.toggle("dropdown-toggle");
 }
 
-var items = document.querySelectorAll("#list li");
+let items = document.querySelectorAll("#list li");
 for (let i = 0; i < items.length; i++) {
   items[i].onclick = function () {
     document.getElementById("setCity").value = this.innerHTML;

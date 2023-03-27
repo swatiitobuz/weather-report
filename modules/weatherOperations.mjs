@@ -4,12 +4,12 @@ import * as fs from "fs";
 let weatherArray = "";
 
 try {
-  var resultOfRead = fs.readFileSync("./weatherDatabase.txt");
+  let resultOfRead = fs.readFileSync("./weatherDatabase.txt");
   weatherArray = JSON.parse(resultOfRead);
 } catch (err) {
   console.log(err);
 }
-var myData = {
+let myData = {
   name: "",
   tempC: "0",
   tempF: "0",
